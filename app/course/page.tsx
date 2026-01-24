@@ -110,7 +110,7 @@ export default function CoursePage() {
                         <motion.div variants={itemVariants} className="order-1 lg:order-2 rounded-2xl overflow-hidden aspect-video relative group shadow-2xl">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="/images/opt_course_basic.png"
+                                src="/yurutto-ippo/images/opt_course_basic.png"
                                 alt="Basic Course"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />
@@ -129,7 +129,7 @@ export default function CoursePage() {
                         <motion.div variants={itemVariants} className="bg-stone-800 rounded-2xl overflow-hidden aspect-video relative group shadow-2xl">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="/images/opt_course_adv.png"
+                                src="/yurutto-ippo/images/opt_course_adv.png"
                                 alt="Advance Course"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />

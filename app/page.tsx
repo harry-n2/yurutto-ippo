@@ -30,7 +30,7 @@ export default function LandingPage() {
         >
           {/* New Premium Background Image */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/opt_hero_bg.png" alt="Luminous Symphony" className="w-full h-full object-cover opacity-80" />
+          <img src="/yurutto-ippo/images/opt_hero_bg.png" alt="Luminous Symphony" className="w-full h-full object-cover opacity-80" />
           <div className="absolute inset-0 bg-black/40" />
         </motion.div>
 
@@ -110,7 +110,7 @@ export default function LandingPage() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/opt_profile.png"
+              src="/yurutto-ippo/images/opt_profile.png"
               alt="Profile"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
@@ -139,7 +139,7 @@ export default function LandingPage() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/opt_course_teaser.png"
+              src="/yurutto-ippo/images/opt_course_teaser.png"
               alt="Courses"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
