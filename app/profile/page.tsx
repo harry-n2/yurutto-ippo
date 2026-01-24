@@ -6,8 +6,7 @@ import Link from "next/link";
 import { ArrowLeft, Star, Heart, Music } from "lucide-react";
 import LineContact from "@/components/common/LineContact";
 
-// Placeholder for the profile image - using the one we moved
-const PROFILE_IMAGE_PATH = "/images/profile-violin.jpg";
+const PROFILE_IMAGE_PATH = "/yurutto-ippo/images/nana-profile.jpg";
 
 export default function ProfilePage() {
     return (
