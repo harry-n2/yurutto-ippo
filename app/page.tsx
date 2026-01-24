@@ -5,7 +5,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, User, BookOpen } from "lucide-react";
 import Link from "next/link";
 
-// New Components
+// Components
+import Header from "@/components/common/Header";
 import SympathySection from "@/components/home/SympathySection";
 import FaqSection from "@/components/home/FaqSection";
 import LineContact from "@/components/common/LineContact";
@@ -20,6 +21,9 @@ export default function LandingPage() {
 
   return (
     <div ref={containerRef} className="bg-stone-50 min-h-screen text-stone-800 overflow-x-hidden font-sans selection:bg-gold/20">
+
+      {/* --- HEADER NAVIGATION --- */}
+      <Header variant="transparent" />
 
       {/* --- HERO SECTION --- */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden bg-stone-900">

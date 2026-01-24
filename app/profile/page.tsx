@@ -3,7 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowLeft, Star, Heart, Music } from "lucide-react";
+import { Star, Heart, Music } from "lucide-react";
+import Header from "@/components/common/Header";
 import LineContact from "@/components/common/LineContact";
 
 const PROFILE_IMAGE_PATH = "/yurutto-ippo/images/nana-profile.jpg";
@@ -11,15 +12,8 @@ const PROFILE_IMAGE_PATH = "/yurutto-ippo/images/nana-profile.jpg";
 export default function ProfilePage() {
     return (
         <main className="min-h-screen bg-stone-50 text-stone-800 font-sans selection:bg-gold/20">
-            {/* Navigation Back */}
-            <nav className="fixed top-0 w-full z-50 px-6 py-6 mix-blend-difference text-white">
-                <Link
-                    href="/"
-                    className="inline-flex items-center gap-2 text-sm tracking-widest hover:opacity-70 transition-opacity"
-                >
-                    <ArrowLeft className="w-4 h-4" /> BACK TO HOME
-                </Link>
-            </nav>
+            {/* Header Navigation */}
+            <Header variant="transparent" />
 
             {/* Header Section */}
             <section className="relative pt-32 pb-20 px-6 md:px-12 bg-stone-100/50">
@@ -140,9 +134,17 @@ export default function ProfilePage() {
                 description="公式LINEでは、より身近な情報発信や、個別の簡易相談も受け付けています。お友達登録お待ちしています。"
             />
 
-            {/* Footer Simple */}
-            <footer className="bg-stone-900 text-stone-400 py-12 text-center text-sm">
-                <p>&copy; {new Date().getFullYear()} Yurutto Ippo. All Rights Reserved.</p>
+            {/* Footer */}
+            <footer className="bg-stone-900 text-stone-500 py-12 px-6">
+                <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div className="text-xl font-serif text-white tracking-widest">Yurutto Ippo</div>
+                    <div className="flex gap-8 text-sm tracking-wider">
+                        <Link href="/" className="hover:text-gold transition-colors">Home</Link>
+                        <Link href="/profile" className="hover:text-gold transition-colors">Profile</Link>
+                        <Link href="/course" className="hover:text-gold transition-colors">Course</Link>
+                    </div>
+                    <p className="text-xs">&copy; {new Date().getFullYear()} Yurutto Ippo.</p>
+                </div>
             </footer>
         </main>
     );

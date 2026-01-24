@@ -3,7 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowLeft, CheckCircle2, Clock, Calendar, Users, Zap, BookOpen } from "lucide-react";
+import { CheckCircle2, Clock, Calendar, Users, Zap } from "lucide-react";
+import Header from "@/components/common/Header";
 import LineContact from "@/components/common/LineContact";
 
 export default function CoursePage() {
@@ -19,15 +20,8 @@ export default function CoursePage() {
 
     return (
         <main className="min-h-screen bg-stone-50 text-stone-800 font-sans selection:bg-gold/20">
-            {/* Navigation Back */}
-            <nav className="fixed top-0 w-full z-50 px-6 py-6 mix-blend-difference text-white">
-                <Link
-                    href="/"
-                    className="inline-flex items-center gap-2 text-sm tracking-widest hover:opacity-70 transition-opacity"
-                >
-                    <ArrowLeft className="w-4 h-4" /> BACK TO HOME
-                </Link>
-            </nav>
+            {/* Header Navigation */}
+            <Header variant="light" />
 
             {/* Header Section */}
             <section className="relative pt-32 pb-20 px-6 md:px-12 bg-gradient-to-b from-stone-200 to-stone-50">
@@ -249,8 +243,16 @@ export default function CoursePage() {
                 className="bg-white"
             />
 
-            <footer className="bg-stone-900 text-stone-400 py-12 text-center text-sm">
-                <p>&copy; {new Date().getFullYear()} Yurutto Ippo. All Rights Reserved.</p>
+            <footer className="bg-stone-900 text-stone-500 py-12 px-6">
+                <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div className="text-xl font-serif text-white tracking-widest">Yurutto Ippo</div>
+                    <div className="flex gap-8 text-sm tracking-wider">
+                        <Link href="/" className="hover:text-gold transition-colors">Home</Link>
+                        <Link href="/profile" className="hover:text-gold transition-colors">Profile</Link>
+                        <Link href="/course" className="hover:text-gold transition-colors">Course</Link>
+                    </div>
+                    <p className="text-xs">&copy; {new Date().getFullYear()} Yurutto Ippo.</p>
+                </div>
             </footer>
         </main>
     );
