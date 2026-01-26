@@ -37,7 +37,7 @@ export default function FaqSection() {
                                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                                 className="w-full flex items-center justify-between p-6 text-left hover:bg-stone-50 transition-colors"
                             >
-                                <span className="font-bold text-stone-900 pr-8 text-xl md:text-2xl flex-1">{faq.q}</span>
+                                <span className="font-bold text-stone-900 pr-8 text-lg md:text-xl flex-1">{faq.q}</span>
                                 {openIndex === i ? (
                                     <Minus className="w-6 h-6 text-gold flex-shrink-0" />
                                 ) : (
@@ -52,7 +52,7 @@ export default function FaqSection() {
                                         exit={{ height: 0, opacity: 0 }}
                                         transition={{ duration: 0.3 }}
                                     >
-                                        <div className="px-6 pb-8 text-stone-900 text-lg md:text-xl leading-relaxed border-t border-stone-100 pt-6 px-8">
+                                        <div className="px-6 pb-8 text-stone-900 text-base md:text-lg leading-relaxed border-t border-stone-100 pt-6 px-8">
                                             {faq.a}
                                         </div>
                                     </motion.div>

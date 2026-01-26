@@ -53,10 +53,10 @@ export default function LandingPage() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.8, duration: 1.2, ease: "easeOut" }}
-            className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight leading-tight mt-6"
+            className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tight leading-tight mt-6"
           >
             圧倒的な気品と<br />
-            <span className="font-light text-gold text-4xl md:text-6xl lg:text-7xl block mt-4">心を開く親しみ</span>
+            <span className="font-light text-gold text-3xl md:text-4xl lg:text-5xl block mt-4">心を開く親しみ</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -93,7 +93,7 @@ export default function LandingPage() {
       {/* --- SOLUTION / VALUE PROPOSITION --- */}
       <section className="py-20 px-6 bg-white text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-3xl md:text-5xl text-stone-800 mb-8">
+          <h2 className="font-serif text-3xl md:text-4xl text-stone-800 mb-8">
             音楽の力が、心を解き放つ
           </h2>
           <p className="text-stone-700 leading-loose text-lg md:text-xl">
@@ -125,7 +125,7 @@ export default function LandingPage() {
               <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center mb-6 border border-white/20">
                 <User className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="font-serif text-5xl mb-6 drop-shadow-xl">Profile</h3>
+              <h3 className="font-serif text-4xl mb-6 drop-shadow-xl">Profile</h3>
               <p className="text-white font-medium text-xl mb-8 leading-relaxed max-w-md drop-shadow-lg">
                 バイオリニストとしての感性と、<br />数多くの対話から生まれた独自のメソッド。<br />代表・奈々の想いをご紹介します。
               </p>
@@ -154,7 +154,7 @@ export default function LandingPage() {
               <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center mb-6 border border-white/20">
                 <BookOpen className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="font-serif text-5xl mb-6 drop-shadow-xl">Courses</h3>
+              <h3 className="font-serif text-4xl mb-6 drop-shadow-xl">Courses</h3>
               <p className="text-white font-medium text-xl mb-8 leading-relaxed max-w-md drop-shadow-lg">
                 自己解放から実践的スキルまで。<br />あなたのステージに合わせた<br />多彩なプログラムをご用意しています。
               </p>

@@ -70,7 +70,7 @@ const AchievementCard = ({ item, index }: { item: AchievementProps; index: numbe
                 <p className="text-stone-400 font-serif text-base mb-2">{item.title}</p>
                 <h3 className="font-serif text-xl font-bold text-stone-900 mb-6 leading-relaxed">{item.subtitle}</h3>
 
-                <p className="text-stone-600 leading-loose text-lg md:text-xl mb-8 flex-1">
+                <p className="text-stone-600 leading-relaxed text-base md:text-lg mb-8 flex-1">
                     {item.description}
                 </p>
 
@@ -102,7 +102,7 @@ export default function AchievementsSection() {
                             initial={{ opacity: 0, letterSpacing: "0.1em" }}
                             whileInView={{ opacity: 1, letterSpacing: "0.2em" }}
                             viewport={{ once: true }}
-                            className="text-stone-900 font-bold font-serif text-xl md:text-2xl uppercase mb-6 tracking-widest"
+                            className="text-stone-900 font-bold font-serif text-base md:text-lg uppercase mb-6 tracking-widest"
                         >
                             GENESIS OF CHANGE
                         </motion.p>
@@ -110,7 +110,7 @@ export default function AchievementsSection() {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="font-serif text-4xl md:text-6xl font-bold text-stone-900 mb-8 leading-tight"
+                            className="font-serif text-3xl md:text-4xl font-bold text-stone-900 mb-8 leading-tight"
                         >
                             人生を変えた<br />3つの成功神話
                         </motion.h2>

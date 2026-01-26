@@ -19,7 +19,7 @@ export default function SympathySection() {
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="font-serif text-3xl md:text-5xl text-stone-800 leading-tight"
+                        className="font-serif text-2xl md:text-4xl text-stone-800 leading-tight"
                     >
                         こんなモヤモヤ、<br className="md:hidden" />抱えていませんか？
                     </motion.h2>

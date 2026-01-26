@@ -30,7 +30,7 @@ export default function ProfilePage() {
                         className="text-center mb-16"
                     >
                         <p className="text-gold font-serif text-base tracking-[0.3em] uppercase mb-4">The Journey</p>
-                        <h1 className="font-serif text-4xl md:text-5xl lg:text-7xl text-stone-900 leading-tight">
+                        <h1 className="font-serif text-2xl md:text-3xl lg:text-4xl text-stone-900 leading-tight">
                             一人の女性の目覚めが、<br className="hidden md:block" />
                             世界と家庭の境界線を溶かすまで
                         </h1>
@@ -48,7 +48,7 @@ export default function ProfilePage() {
                                 transition={{ duration: 0.8 }}
                                 className="order-2 lg:order-1"
                             >
-                                <h4 className="font-serif text-3xl md:text-4xl text-stone-900 mb-6 flex items-center gap-3">
+                                <h4 className="font-serif text-2xl md:text-3xl text-stone-900 mb-6 flex items-center gap-3">
                                     <span className="w-10 h-[1px] bg-gold" />
                                     <Music className="w-6 h-6 text-gold" />
                                     不可能の超え方
@@ -103,7 +103,7 @@ export default function ProfilePage() {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.8 }}
                             >
-                                <h4 className="font-serif text-3xl md:text-4xl text-stone-900 mb-6 flex items-center gap-3">
+                                <h4 className="font-serif text-2xl md:text-3xl text-stone-900 mb-6 flex items-center gap-3">
                                     <span className="w-10 h-[1px] bg-gold" />
                                     <Feather className="w-6 h-6 text-gold" />
                                     世界と繋がる手仕事
@@ -125,7 +125,7 @@ export default function ProfilePage() {
                                 transition={{ duration: 0.8 }}
                                 className="order-2 lg:order-1"
                             >
-                                <h4 className="font-serif text-3xl md:text-4xl text-stone-900 mb-6 flex items-center gap-3">
+                                <h4 className="font-serif text-2xl md:text-3xl text-stone-900 mb-6 flex items-center gap-3">
                                     <span className="w-10 h-[1px] bg-gold" />
                                     <BookOpen className="w-6 h-6 text-gold" />
                                     次世代へのラブレター
@@ -164,7 +164,7 @@ export default function ProfilePage() {
                 <div className="max-w-4xl mx-auto relative z-10">
                     <div className="text-center mb-16">
                         <p className="text-gold font-serif tracking-[0.2em] text-base uppercase mb-2">The Method</p>
-                        <h2 className="text-4xl md:text-5xl font-serif">なぜ、私の伴走は「現実」を変えるのか？</h2>
+                        <h2 className="text-2xl md:text-3xl font-serif">なぜ、私の伴走は「現実」を変えるのか？</h2>
                         <p className="text-stone-400 mt-4 text-base md:text-lg">Amazon Kindleでの評価が物語る、理想を現実にするための「黄金律」</p>
                     </div>
 
@@ -201,26 +201,35 @@ export default function ProfilePage() {
             <section className="py-24 px-6 bg-[#F9F9F5]">
                 <div className="max-w-3xl mx-auto text-center">
                     <div className="mb-12">
-                        <h2 className="font-serif text-3xl md:text-5xl text-stone-900 mb-8 leading-tight">
+                        <h2 className="font-serif text-2xl md:text-3xl text-stone-900 mb-8 leading-tight">
                             あなたが変われば、<br />家庭も、世界も、優しくなる。
                         </h2>
-                        <p className="text-stone-600 leading-loose text-justify md:text-center text-lg md:text-xl">
-                            かつて離婚寸前だった私の家庭が、今や互いの活動を尊重し合う最高のパートナーシップへと進化した理由。<br />
-                            それは、私が「家族のために」という名目で自分を犠牲にするのをやめたからです。<br /><br />
-                            あなたが「一人の女性」としての自分を取り戻し、生き生きと輝き始めたとき、<br />
-                            お子さんは「お母さんの子供に生まれてよかった。人生ってこんなに楽しいんだ！」と、背中で学ぶのです。<br />
+                        <p className="text-stone-600 leading-loose text-center text-lg md:text-xl">
+                            かつて離婚寸前だった私の家庭が、<br />
+                            今や互いの活動を尊重し合う<br className="md:hidden" />最高のパートナーシップへと進化した理由。<br />
+                            それは、私が「家族のために」という名目で<br />
+                            自分を犠牲にするのをやめたからです。<br /><br />
+                            あなたが「一人の女性」としての自分を取り戻し、<br />
+                            生き生きと輝き始めたとき、<br />
+                            お子さんは「お母さんの子供に生まれてよかった。<br />
+                            人生ってこんなに楽しいんだ！」と、<br />
+                            背中で学ぶのです。<br />
                             これ以上の教育が、他にあるでしょうか。<br /><br />
-                            「ゆるっと一歩」は、決して小さな歩みではありません。<br />
-                            それは、あなたの人生の、そしてあなたの大切な人たちの運命を根底から変える、偉大なる最初の一歩です。
+                            「ゆるっと一歩」は、<br />
+                            決して小さな歩みではありません。<br />
+                            それは、あなたの人生の、<br />
+                            そしてあなたの大切な人たちの運命を根底から変える、<br />
+                            偉大なる最初の一歩です。
                         </p>
                     </div>
 
                     <div className="relative inline-block mt-8">
                         <div className="absolute top-0 left-0 w-full h-full bg-gold/10 blur-xl rounded-full"></div>
-                        <p className="relative z-10 font-serif text-2xl md:text-3xl italic text-stone-800">
+                        <p className="relative z-10 font-serif text-xl md:text-2xl text-stone-800 leading-relaxed">
                             私は、あなたがその一歩を踏み出し、<br />
                             自分の翼で羽ばたき続けるその日まで、<br />
-                            誠実な伴走者として、あなたのすぐ隣に居続けることを誓います。
+                            誠実な伴走者として、<br />
+                            あなたのすぐ隣に居続けることを誓います。
                         </p>
                     </div>
                 </div>

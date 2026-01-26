@@ -31,7 +31,7 @@ export default function CoursePage() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1 className="font-serif text-4xl md:text-5xl lg:text-7xl text-stone-900 mb-6 tracking-tight">
+                        <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-stone-900 mb-6 tracking-tight">
                             Course Menu
                         </h1>
                         <p className="text-gold font-serif text-xl tracking-widest uppercase mb-8">
@@ -61,7 +61,7 @@ export default function CoursePage() {
                             <motion.div variants={itemVariants} className="inline-block px-4 py-1 bg-stone-200 rounded-full text-stone-600 text-sm tracking-widest uppercase">
                                 Step 1
                             </motion.div>
-                            <motion.h2 variants={itemVariants} className="font-serif text-4xl md:text-5xl text-stone-800">
+                            <motion.h2 variants={itemVariants} className="font-serif text-2xl md:text-3xl text-stone-800">
                                 自己解放ベーシック講座
                             </motion.h2>
                             <motion.p variants={itemVariants} className="text-stone-600 leading-relaxed text-lg md:text-xl">
@@ -134,7 +134,7 @@ export default function CoursePage() {
                             <motion.div variants={itemVariants} className="inline-block px-4 py-1 bg-gold/20 text-gold rounded-full text-sm tracking-widest uppercase">
                                 Most Popular
                             </motion.div>
-                            <motion.h2 variants={itemVariants} className="font-serif text-4xl md:text-5xl text-stone-800">
+                            <motion.h2 variants={itemVariants} className="font-serif text-2xl md:text-3xl text-stone-800">
                                 ライフシフト実践アカデミー
                             </motion.h2>
                             <motion.p variants={itemVariants} className="text-stone-600 leading-relaxed text-lg md:text-xl">
@@ -186,7 +186,7 @@ export default function CoursePage() {
             {/* Process Flow */}
             <section className="py-20 px-6 bg-white">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="font-serif text-4xl md:text-5xl text-stone-800 mb-16 text-center">
+                    <h2 className="font-serif text-3xl md:text-4xl text-stone-800 mb-16 text-center">
                         Flow to Start <br />
                         <span className="text-lg text-stone-500 font-sans font-normal tracking-wide mt-2 block">受講までの流れ</span>
                     </h2>
@@ -228,7 +228,7 @@ export default function CoursePage() {
                 <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Left: Text Content */}
                     <div className="text-left space-y-8">
-                        <h2 className="font-serif text-3xl md:text-4xl font-bold text-stone-900 leading-tight">
+                        <h2 className="font-serif text-2xl md:text-3xl font-bold text-stone-900 leading-tight">
                             プログラムの詳細は、<br />体験セッションにてお伝えしています。
                         </h2>
                         <p className="text-stone-900 text-lg md:text-xl leading-relaxed">
