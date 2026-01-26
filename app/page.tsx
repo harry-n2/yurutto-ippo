@@ -9,6 +9,7 @@ import Link from "next/link";
 import Header from "@/components/common/Header";
 import SympathySection from "@/components/home/SympathySection";
 import FaqSection from "@/components/home/FaqSection";
+import AchievementsSection from "@/components/home/AchievementsSection";
 import LineContact from "@/components/common/LineContact";
 
 export default function LandingPage() {
@@ -92,10 +93,10 @@ export default function LandingPage() {
       {/* --- SOLUTION / VALUE PROPOSITION --- */}
       <section className="py-20 px-6 bg-white text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-2xl md:text-3xl text-stone-800 mb-6">
+          <h2 className="font-serif text-3xl md:text-5xl text-stone-800 mb-8">
             音楽の力が、心を解き放つ
           </h2>
-          <p className="text-stone-600 leading-loose">
+          <p className="text-stone-700 leading-loose text-lg md:text-xl">
             言葉だけで変わろうとしないでください。<br />
             音の波動、対話の温度、空間の余白。<br />
             五感すべてを使って、あなたの本来の輝きを呼び覚まします。
@@ -124,8 +125,8 @@ export default function LandingPage() {
               <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center mb-6 border border-white/20">
                 <User className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="font-serif text-3xl mb-4">Profile</h3>
-              <p className="text-stone-300 text-sm mb-8 leading-relaxed max-w-sm">
+              <h3 className="font-serif text-5xl mb-6 drop-shadow-xl">Profile</h3>
+              <p className="text-white font-medium text-xl mb-8 leading-relaxed max-w-md drop-shadow-lg">
                 バイオリニストとしての感性と、<br />数多くの対話から生まれた独自のメソッド。<br />代表・奈々の想いをご紹介します。
               </p>
               <Link href="/profile" className="w-full max-w-xs">
@@ -153,8 +154,8 @@ export default function LandingPage() {
               <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center mb-6 border border-white/20">
                 <BookOpen className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="font-serif text-3xl mb-4">Courses</h3>
-              <p className="text-stone-300 text-sm mb-8 leading-relaxed max-w-sm">
+              <h3 className="font-serif text-5xl mb-6 drop-shadow-xl">Courses</h3>
+              <p className="text-white font-medium text-xl mb-8 leading-relaxed max-w-md drop-shadow-lg">
                 自己解放から実践的スキルまで。<br />あなたのステージに合わせた<br />多彩なプログラムをご用意しています。
               </p>
               <Link href="/course" className="w-full max-w-xs">
@@ -171,6 +172,9 @@ export default function LandingPage() {
       {/* --- FAQ SECTION (NEW) --- */}
       <FaqSection />
 
+      {/* --- ACHIEVEMENTS SECTION (NEW) --- */}
+      <AchievementsSection />
+
       {/* --- LINE CONTACT / CTA --- */}
       <LineContact
         title="公式LINEで、新しい一歩を"
@@ -178,14 +182,15 @@ export default function LandingPage() {
       />
 
       {/* --- FOOTER --- */}
-      <footer className="bg-stone-900 text-stone-500 py-12 px-6">
+      <footer className="bg-stone-900 text-stone-300 py-12 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-xl font-serif text-white tracking-widest">Yurutto Ippo</div>
-          <div className="flex gap-8 text-sm tracking-wider">
+          <div className="text-3xl font-serif text-white tracking-widest">ゆるっと一歩相談室</div>
+          <div className="flex gap-8 text-lg tracking-wider">
+            <Link href="/" className="hover:text-gold transition-colors">Home</Link>
             <Link href="/profile" className="hover:text-gold transition-colors">Profile</Link>
             <Link href="/course" className="hover:text-gold transition-colors">Course</Link>
           </div>
-          <p className="text-xs">&copy; {new Date().getFullYear()} Yurutto Ippo.</p>
+          <p className="text-base">&copy; {new Date().getFullYear()} ゆるっと一歩相談室.</p>
         </div>
       </footer>
 

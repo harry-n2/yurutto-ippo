@@ -18,7 +18,8 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: "ゆるっと一歩相談室 | Ideal × Reality",
-  description: "心に響く唯一無二のライフシフト体験を。バイオリニスト・華道家 奈々が贈る伴走プログラム。",
+  description: "心に響く唯一無二のライフシフト体験を。バイオリニスト・華道家 奈々が贈る伴走プログラム。夫婦関係、離婚、再婚などのお悩みにも。",
+  keywords: ["夫婦関係", "離婚", "再婚", "自己実現", "女性の自立"],
 };
 
 export default function RootLayout({

@@ -55,8 +55,8 @@ export default function Header({ variant = "transparent" }: HeaderProps) {
             >
                 <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
                     {/* Logo */}
-                    <Link href="/" className={`font-serif text-xl tracking-widest ${textColor} hover:opacity-80 transition-opacity`}>
-                        Yurutto Ippo
+                    <Link href="/" className={`font-serif text-xl md:text-2xl tracking-widest ${textColor} hover:opacity-80 transition-opacity`}>
+                        ゆるっと一歩相談室
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -65,7 +65,7 @@ export default function Header({ variant = "transparent" }: HeaderProps) {
                             <Link
                                 key={item.href}
                                 href={item.href}
-                                className={`relative text-sm tracking-widest uppercase transition-colors ${textColor} hover:text-gold ${isActive(item.href) ? "text-gold" : ""
+                                className={`relative text-base tracking-widest uppercase transition-colors ${textColor} hover:text-gold ${isActive(item.href) ? "text-gold" : ""
                                     }`}
                             >
                                 {item.label}

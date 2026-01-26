@@ -6,7 +6,7 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
     {
-        q: "楽器の経験がなくても大丈夫ですか？",
+        q: "好きなことや得意な事がなくても大丈夫ですか？",
         a: "はい、全く問題ありません。当プログラムは音楽の技術を教えるものではなく、音楽的感性を使って心を整える独自メソッドです。"
     },
     {
@@ -26,8 +26,8 @@ export default function FaqSection() {
         <section className="py-24 px-6 bg-stone-50">
             <div className="max-w-3xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="font-serif text-3xl md:text-4xl text-stone-800 mb-2">Q & A</h2>
-                    <p className="text-xs text-stone-500 tracking-widest">よくあるご質問</p>
+                    <h2 className="font-serif text-4xl md:text-6xl text-stone-800 mb-4">Q & A</h2>
+                    <p className="text-base md:text-lg text-stone-500 tracking-widest">よくあるご質問</p>
                 </div>
 
                 <div className="space-y-4">
@@ -37,11 +37,11 @@ export default function FaqSection() {
                                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                                 className="w-full flex items-center justify-between p-6 text-left hover:bg-stone-50 transition-colors"
                             >
-                                <span className="font-medium text-stone-800 pr-8">{faq.q}</span>
+                                <span className="font-bold text-stone-900 pr-8 text-xl md:text-2xl flex-1">{faq.q}</span>
                                 {openIndex === i ? (
-                                    <Minus className="w-5 h-5 text-gold flex-shrink-0" />
+                                    <Minus className="w-6 h-6 text-gold flex-shrink-0" />
                                 ) : (
-                                    <Plus className="w-5 h-5 text-stone-400 flex-shrink-0" />
+                                    <Plus className="w-6 h-6 text-stone-400 flex-shrink-0" />
                                 )}
                             </button>
                             <AnimatePresence>
@@ -52,7 +52,7 @@ export default function FaqSection() {
                                         exit={{ height: 0, opacity: 0 }}
                                         transition={{ duration: 0.3 }}
                                     >
-                                        <div className="px-6 pb-6 text-stone-600 text-sm leading-relaxed border-t border-stone-100 pt-4">
+                                        <div className="px-6 pb-8 text-stone-900 text-lg md:text-xl leading-relaxed border-t border-stone-100 pt-6 px-8">
                                             {faq.a}
                                         </div>
                                     </motion.div>

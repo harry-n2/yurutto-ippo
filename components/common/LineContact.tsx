@@ -36,11 +36,13 @@ export default function LineContact({
                     </div>
                     <div className="p-10 md:p-14 flex flex-col items-center justify-center bg-stone-50">
                         <div className="w-48 h-48 bg-white p-4 rounded-xl shadow-inner border border-stone-200 flex items-center justify-center relative">
-                            {/* Placeholder for QR Code */}
-                            <QrCode className="w-full h-full text-stone-800 opacity-20" />
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <span className="text-xs text-stone-400 font-mono bg-white px-2 py-1 rounded">QR CODE</span>
-                            </div>
+                            {/* LINE QR Code */}
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src="/yurutto-ippo/images/line_qr_final_v3.jpg"
+                                alt="LINE QR Code"
+                                className="w-full h-full object-contain"
+                            />
                         </div>
                         <p className="mt-6 text-xs text-stone-500 text-center">
                             カメラでQRコードを読み取るか、<br />ボタンから追加してください。
