@@ -90,19 +90,7 @@ export default function LandingPage() {
       {/* --- SYMPATHY SECTION (NEW) --- */}
       <SympathySection />
 
-      {/* --- SOLUTION / VALUE PROPOSITION --- */}
-      <section className="py-20 px-6 bg-white text-center">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-3xl md:text-4xl text-stone-800 mb-8">
-            音楽の力が、心を解き放つ
-          </h2>
-          <p className="text-stone-700 leading-loose text-lg md:text-xl">
-            言葉だけで変わろうとしないでください。<br />
-            音の波動、対話の温度、空間の余白。<br />
-            五感すべてを使って、あなたの本来の輝きを呼び覚まします。
-          </p>
-        </div>
-      </section>
+
 
       {/* --- TEASER SECTIONS (VISUAL UPGRADE) --- */}
       <section className="py-20 px-6 bg-stone-50">

@@ -74,20 +74,7 @@ export default function SympathySection() {
                     </motion.div>
                 </div>
 
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4 }}
-                    className="mt-16 text-center max-w-2xl mx-auto"
-                >
-                    <p className="text-xl text-stone-700 leading-relaxed">
-                        そのギャップを埋めるのは、<br />
-                        難しいスキルでも、厳しい努力でもありません。<br />
-                        <span className="text-gold font-bold text-2xl md:text-3xl inline-block mt-4">
-                            ただ、「心のチューニング」を整えるだけ。
-                        </span>
-                    </p>
-                </motion.div>
+
             </div>
         </section>
     );
