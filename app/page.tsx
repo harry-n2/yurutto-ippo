@@ -10,6 +10,7 @@ import Header from "@/components/common/Header";
 import SympathySection from "@/components/home/SympathySection";
 import FaqSection from "@/components/home/FaqSection";
 import AchievementsSection from "@/components/home/AchievementsSection";
+import DobutsuUranaiSection from "@/components/home/DobutsuUranaiSection";
 import LineContact from "@/components/common/LineContact";
 
 export default function LandingPage() {
@@ -162,6 +163,9 @@ export default function LandingPage() {
 
       {/* --- ACHIEVEMENTS SECTION (NEW) --- */}
       <AchievementsSection />
+
+      {/* --- どうぶつ幸福占い SECTION --- */}
+      <DobutsuUranaiSection />
 
       {/* --- LINE CONTACT / CTA --- */}
       <LineContact
