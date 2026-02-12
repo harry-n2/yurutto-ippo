@@ -60,24 +60,7 @@ export default function LandingPage() {
             <span className="font-light text-gold text-3xl md:text-4xl lg:text-5xl block mt-4">心を開く親しみ</span>
           </motion.h1>
 
-          {/* --- INSERTED VIDEO START --- */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2, duration: 1 }}
-            className="mt-10 mb-6 w-full max-w-3xl mx-auto aspect-video rounded-xl overflow-hidden shadow-2xl border border-white/20 bg-black"
-          >
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/kcK0BcsEzz4?rel=0"
-              title="Promotional Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </motion.div>
-          {/* --- INSERTED VIDEO END --- */}
+
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
