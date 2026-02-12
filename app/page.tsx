@@ -90,29 +90,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* --- NEW VIDEO SECTION START --- */}
-      <section className="bg-white py-16 px-6">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="aspect-video w-full rounded-2xl overflow-hidden shadow-2xl border border-stone-200 bg-black"
-          >
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/kcK0BcsEzz4?rel=0"
-              title="Promotional Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </motion.div>
-        </div>
-      </section>
-      {/* --- NEW VIDEO SECTION END --- */}
+
 
       {/* --- SYMPATHY SECTION (NEW) --- */}
       <SympathySection />
