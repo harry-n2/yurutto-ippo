@@ -12,6 +12,7 @@ import FaqSection from "@/components/home/FaqSection";
 import AchievementsSection from "@/components/home/AchievementsSection";
 import DobutsuUranaiSection from "@/components/home/DobutsuUranaiSection";
 import LineContact from "@/components/common/LineContact";
+import VideoSection from "@/components/home/VideoSection";
 
 export default function LandingPage() {
   const containerRef = useRef(null);
@@ -91,6 +92,9 @@ export default function LandingPage() {
       </section>
 
 
+
+      {/* --- VIDEO SECTION --- */}
+      <VideoSection />
 
       {/* --- SYMPATHY SECTION (NEW) --- */}
       <SympathySection />
