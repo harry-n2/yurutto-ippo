@@ -13,6 +13,7 @@ import AchievementsSection from "@/components/home/AchievementsSection";
 import DobutsuUranaiSection from "@/components/home/DobutsuUranaiSection";
 import LineContact from "@/components/common/LineContact";
 import VideoSection from "@/components/home/VideoSection";
+import { basePath } from "@/lib/basePath";
 
 export default function LandingPage() {
   const containerRef = useRef(null);
@@ -37,7 +38,7 @@ export default function LandingPage() {
         >
           {/* New Premium Background Image */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/yurutto-ippo/images/opt_hero_bg.png" alt="Luminous Symphony" className="w-full h-full object-cover opacity-80" />
+          <img src={`${basePath}/images/opt_hero_bg.png`} alt="Luminous Symphony" className="w-full h-full object-cover opacity-80" />
           <div className="absolute inset-0 bg-black/40" />
         </motion.div>
 
@@ -112,7 +113,7 @@ export default function LandingPage() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/yurutto-ippo/images/opt_profile.png"
+              src={`${basePath}/images/opt_profile.png`}
               alt="Profile"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
@@ -141,7 +142,7 @@ export default function LandingPage() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/yurutto-ippo/images/opt_course_teaser.png"
+              src={`${basePath}/images/opt_course_teaser.png`}
               alt="Courses"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />

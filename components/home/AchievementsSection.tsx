@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import { basePath } from "@/lib/basePath";
 
 type AchievementProps = {
     title: string;
@@ -24,7 +25,7 @@ const achievements: AchievementProps[] = [
         beforeDetail: "素敵な作品を作っているものの、どこで売ればいいのか、公式LINEの作り方、写真の撮り方も分からず、立ち止まっていました。",
         after: "After",
         afterDetail: "魅力が伝わる撮影方法をレクチャーし、販売サイトの構築と公式LINEの立ち上げをサポート。公式LINEから新作のお知らせをするたびに注文が入る状態が定着。",
-        image: "/yurutto-ippo/images/achievement_handler.jpg",
+        image: `${basePath}/images/achievement_handler.jpg`,
     },
     {
         title: "Case 02",
@@ -34,7 +35,7 @@ const achievements: AchievementProps[] = [
         beforeDetail: "小さな子供たちがいて時間も余裕もない。「自分には特技もない」と、育児に消耗する毎日に焦りを感じていました。",
         after: "After",
         afterDetail: "「家事能力の高さ」を非日常の価値として再定義。YouTubeチャンネルの設立をプロデュースし、隙間時間での動画編集をマスター。多くのファンを持つ人気アカウントへ成長。",
-        image: "/yurutto-ippo/images/achievement_mom.jpg",
+        image: `${basePath}/images/achievement_mom.jpg`,
     },
     {
         title: "Case 03",
@@ -44,7 +45,7 @@ const achievements: AchievementProps[] = [
         beforeDetail: "「アイドルになりたい」という本音を、母親という立場から封印。生きがいのなさを感じていました。",
         after: "After",
         afterDetail: "心の奥底にある「本音」を引き出し、ダンスレッスンの体験へ。個人SNSでの発信を開始し、「母親として」ではなく「自分自身」としての発信を確立。顔つきまで明るく変化。",
-        image: "/yurutto-ippo/images/achievement_idol.jpg",
+        image: `${basePath}/images/achievement_idol.jpg`,
     },
 ];
 
@@ -137,7 +138,7 @@ export default function AchievementsSection() {
                         <div className="relative w-full max-w-sm shadow-2xl rounded-lg overflow-hidden border-4 border-white/50">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="/yurutto-ippo/images/journal_cover.jpg"
+                                src={`${basePath}/images/journal_cover.jpg`}
                                 alt="理想×現実ノート"
                                 className="w-full h-auto object-cover"
                             />

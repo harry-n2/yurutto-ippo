@@ -6,8 +6,9 @@ import Link from "next/link";
 import { Star, Heart, Music, BookOpen, Feather, Sparkles } from "lucide-react";
 import Header from "@/components/common/Header";
 import LineContact from "@/components/common/LineContact";
+import { basePath } from "@/lib/basePath";
 
-const PROFILE_IMAGE_PATH = "/yurutto-ippo/images/nana-profile.jpg";
+const PROFILE_IMAGE_PATH = `${basePath}/images/nana-profile.jpg`;
 
 const SectionHeading = ({ children, number }: { children: React.ReactNode, number: string }) => (
     <div className="flex items-end gap-4 mb-4">
@@ -69,7 +70,7 @@ export default function ProfilePage() {
                                 <div className="aspect-[3/4] max-w-sm mx-auto overflow-hidden rounded-lg shadow-xl">
                                     {/* eslint-disable-next-line @next/next/no-img-element */}
                                     <img
-                                        src="/yurutto-ippo/images/profile-violin.jpg"
+                                        src={`${basePath}/images/profile-violin.jpg`}
                                         alt="Playing Violin on Stage"
                                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                     />
@@ -90,7 +91,7 @@ export default function ProfilePage() {
                                 <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
                                     {/* eslint-disable-next-line @next/next/no-img-element */}
                                     <img
-                                        src="/yurutto-ippo/images/flower-set-black.jpg"
+                                        src={`${basePath}/images/flower-set-black.jpg`}
                                         alt="Flower Bag Collection"
                                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                     />
@@ -146,7 +147,7 @@ export default function ProfilePage() {
                                 <div className="aspect-[4/3] bg-stone-200 rounded-lg shadow-lg overflow-hidden">
                                     {/* eslint-disable-next-line @next/next/no-img-element */}
                                     <img
-                                        src="/yurutto-ippo/images/profile_flower_kit.jpg"
+                                        src={`${basePath}/images/profile_flower_kit.jpg`}
                                         alt="Flower Arrangement Kit"
                                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                     />

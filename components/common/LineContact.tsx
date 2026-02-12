@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { QrCode, Smartphone } from "lucide-react";
+import { basePath } from "@/lib/basePath";
 
 interface LineContactProps {
     title?: string;
@@ -39,7 +40,7 @@ export default function LineContact({
                             {/* LINE QR Code */}
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="/yurutto-ippo/images/line_qr_final_v3.jpg"
+                                src={`${basePath}/images/line_qr_final_v3.jpg`}
                                 alt="LINE QR Code"
                                 className="w-full h-full object-contain"
                             />

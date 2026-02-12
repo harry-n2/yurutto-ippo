@@ -6,6 +6,7 @@ import Link from "next/link";
 import { CheckCircle2, Clock, Calendar, Users, Zap } from "lucide-react";
 import Header from "@/components/common/Header";
 import LineContact from "@/components/common/LineContact";
+import { basePath } from "@/lib/basePath";
 
 export default function CoursePage() {
     const containerVariants = {
@@ -104,7 +105,7 @@ export default function CoursePage() {
                         <motion.div variants={itemVariants} className="order-1 lg:order-2 rounded-2xl overflow-hidden aspect-video relative group shadow-2xl">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="/yurutto-ippo/images/opt_course_basic.png"
+                                src={`${basePath}/images/opt_course_basic.png`}
                                 alt="Basic Course"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />
@@ -123,7 +124,7 @@ export default function CoursePage() {
                         <motion.div variants={itemVariants} className="bg-stone-800 rounded-2xl overflow-hidden aspect-video relative group shadow-2xl">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="/yurutto-ippo/images/opt_course_adv.png"
+                                src={`${basePath}/images/opt_course_adv.png`}
                                 alt="Advance Course"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />
@@ -242,7 +243,7 @@ export default function CoursePage() {
                         <div className="relative w-full max-w-sm shadow-2xl rounded-lg overflow-hidden border-4 border-white/50">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="/yurutto-ippo/images/journal_cover.jpg"
+                                src={`${basePath}/images/journal_cover.jpg`}
                                 alt="理想×現実ノート"
                                 className="w-full h-auto object-cover"
                             />
