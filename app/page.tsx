@@ -39,7 +39,7 @@ export default function LandingPage() {
         >
           {/* New Premium Background Image */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`${basePath}/images/opt_hero_bg.png`} alt="Luminous Symphony" className="w-full h-full object-cover opacity-80" />
+          <img src={`${basePath}/images/hero_violin_full.webp`} alt="Luminous Symphony" className="w-full h-full object-cover opacity-80" />
           <div className="absolute inset-0 bg-black/40" />
         </motion.div>
 
