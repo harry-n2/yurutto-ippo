@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
-import { QrCode, Smartphone } from "lucide-react";
+import { Smartphone } from "lucide-react";
 import { basePath } from "@/lib/basePath";
+
+const LINE_URL = "https://lin.ee/vfr1AHA";
 
 interface LineContactProps {
     title?: string;
@@ -31,12 +32,23 @@ export default function LineContact({
                         <p className="opacity-90 leading-relaxed mb-8 text-sm md:text-base">
                             {description}
                         </p>
-                        <button className="bg-white text-[#06C755] px-8 py-3 rounded-full font-bold hover:bg-stone-100 transition-colors self-start shadow-md">
+                        <a
+                            href={LINE_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block self-start bg-white text-[#06C755] px-8 py-3 rounded-full font-bold hover:bg-stone-100 transition-colors shadow-md text-center"
+                        >
                             お友達追加はこちら
-                        </button>
+                        </a>
                     </div>
                     <div className="p-10 md:p-14 flex flex-col items-center justify-center bg-stone-50">
-                        <div className="w-48 h-48 bg-white p-4 rounded-xl shadow-inner border border-stone-200 flex items-center justify-center relative">
+                        <a
+                            href={LINE_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-48 h-48 bg-white p-4 rounded-xl shadow-inner border border-stone-200 flex items-center justify-center relative hover:border-[#06C755] transition-colors"
+                            aria-label="LINE友だち追加（QRコード）"
+                        >
                             {/* LINE QR Code */}
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
@@ -44,7 +56,7 @@ export default function LineContact({
                                 alt="LINE QR Code"
                                 className="w-full h-full object-contain"
                             />
-                        </div>
+                        </a>
                         <p className="mt-6 text-xs text-stone-500 text-center">
                             カメラでQRコードを読み取るか、<br />ボタンから追加してください。
                         </p>

@@ -13,6 +13,7 @@ import AchievementsSection from "@/components/home/AchievementsSection";
 import DobutsuUranaiSection from "@/components/home/DobutsuUranaiSection";
 import LineContact from "@/components/common/LineContact";
 import VideoSection from "@/components/home/VideoSection";
+import Footer from "@/components/common/Footer";
 import { basePath } from "@/lib/basePath";
 
 export default function LandingPage() {
@@ -183,17 +184,7 @@ export default function LandingPage() {
       />
 
       {/* --- FOOTER --- */}
-      <footer className="bg-stone-900 text-stone-300 py-12 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-3xl font-serif text-white tracking-widest">ゆるっと一歩相談室</div>
-          <div className="flex gap-8 text-lg tracking-wider">
-            <Link href="/" className="hover:text-gold transition-colors">Home</Link>
-            <Link href="/profile" className="hover:text-gold transition-colors">Profile</Link>
-            <Link href="/course" className="hover:text-gold transition-colors">Course</Link>
-          </div>
-          <p className="text-base">&copy; {new Date().getFullYear()} ゆるっと一歩相談室.</p>
-        </div>
-      </footer>
+      <Footer />
 
     </div>
   );
